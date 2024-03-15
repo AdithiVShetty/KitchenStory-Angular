@@ -1,0 +1,26 @@
+.not-found-box {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #495057;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .not-found-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #dc3545;
+  }
+
+  .back-home-btn {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #dc3545
+  }
+  .back-home-btn a {
+    text-decoration: none;
+    color: #f2eef7;
+  }

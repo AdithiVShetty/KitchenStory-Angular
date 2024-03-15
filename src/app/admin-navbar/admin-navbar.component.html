@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+    <a class="navbar-brand" [routerLink]="['/']"><strong> {{title}} <i class="fa-solid fa-utensils"></i></strong></a>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item mr-3">
+          <a routerLink="/master-food-menu" class="nav-link">Food Menu</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a routerLink="/admin/modify-password" class="nav-link">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/logout" class="nav-link">Logout</a>
+        </li>
+      </ul>
+    </div>
+</nav>

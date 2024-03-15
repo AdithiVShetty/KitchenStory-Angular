@@ -1,0 +1,44 @@
+.delete-confirmation-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #dc3545;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .float-left .btn{
+    background-color: rgb(65, 117, 158);
+  color: rgb(230, 230, 230);
+}
+.float-left .btn:hover {
+    background-color: transparent;
+  color: rgb(65, 117, 158);
+  box-shadow: 2px 2px 4px rgba(65, 117, 158, 0.6);
+}
+
+  .delete-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #dc3545;
+  }
+
+  .confirm-btn, .cancel-btn {
+    width: 100px;
+    margin: 10px 10px 0 10px;
+  }
+  .btn:active {
+    box-shadow: none;
+}
+.success-message {
+    color: green;
+    margin-top: 8px;
+    font-size: 13px;
+  }
+  .error-message {
+    color: red;
+    margin-top: 8px;
+    font-size: 13px;
+  }

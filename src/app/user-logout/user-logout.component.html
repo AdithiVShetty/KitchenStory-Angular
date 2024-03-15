@@ -1,0 +1,10 @@
+<app-user-navbar></app-user-navbar>
+<div class="logout">
+  <br/><br/>
+  <div class="container logout-container mt-5">
+    <i class="fas fa-user-circle logout-icon"></i>
+    <h2 class="logout-title">{{userName}}, Are you sure you want to logout?</h2>
+    <p class="logout-description">Logging out will end your session.</p>
+    <button class="btn btn-logout" (click)="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+  </div>
+</div>

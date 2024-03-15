@@ -1,0 +1,18 @@
+.btn:hover{
+    background-color: transparent;
+    color: rgb(65, 117, 158);
+    box-shadow: 2px 2px 4px rgba(65, 117, 158, 0.6);
+}
+button{
+    background-color: rgb(200, 200, 200);
+}
+button a{
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+}
+button:hover a{
+    color: rgb(65, 117, 158);
+}
+table {
+    font-size: 15px;
+}

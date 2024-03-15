@@ -1,0 +1,49 @@
+<app-user-navbar></app-user-navbar>
+<div class="userDashboard">
+    <br/><br/>
+    <div class="container mt-5">
+        <div class="welcome-message">
+            <i class="fas fa-utensils welcome-icon"></i>
+            <h2>{{userName}}, Welcome to Kitchen Story!</h2>
+            <p>Your one-stop destination for fresh and delicious ingredients. Let's start your culinary journey!</p>
+            <a (click) = "goToFoodMenu()" class="btn btn-explore">Explore Now</a>
+            <br/>
+            <div class=" row justify-content-center">
+                <div class="col-md-6">
+                    <div class="row form-group justify-content-center mt-3">
+                        <div class="col-md-9">
+                            <input type="text" id="searchTerm" class="form-control" [(ngModel)]="searchTerm" placeholder="Search Food"/>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn search-btn float-left" (click)="searchFoodItem()"><span class="fa fa-search"></span> Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        <br/>
+        <div *ngIf="errorMessage" class="text-center">
+            <strong>{{ errorMessage }}</strong>
+        </div>
+            <table class="table table-hover" *ngIf="resultFoodList && resultFoodList.length > 0">
+                <thead>
+                    <tr class="justify-content-center">
+                        <th>Food</th>
+                        <th>Price (&#8377;)</th>
+                        <!-- <th></th> -->
+                    </tr>
+                </thead>
+                <tbody (click) = "goToFoodMenu()">
+                    <tr *ngFor="let food of resultFoodList">
+                        <td>{{food.Name}}</td>
+                        <td>{{food.Price | number:'1.2-2'}}</td>
+                        <!-- <td>
+                            <button class="btn btn-sm">
+                                View <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </td> -->
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+</div>

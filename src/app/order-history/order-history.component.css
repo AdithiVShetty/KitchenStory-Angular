@@ -1,0 +1,36 @@
+  .order-card {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  }
+
+  .order-header {
+    background-color: rgb(65, 117, 158);
+    color: rgb(220, 220, 220);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 8px 20px;
+  }
+
+  .order-header h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .order-details {
+    font-size: 15px;
+    color: rgb(120, 120, 120);
+    margin-bottom: 3px;
+    padding: 20px 20px 5px 20px;
+  }
+
+  .order-details span{
+    font-size: 16px;
+    color: rgb(160, 160, 160);
+  }
+  
+  .order-payment {
+    font-size: 12px;
+    color: rgb(120, 120, 120);
+  }

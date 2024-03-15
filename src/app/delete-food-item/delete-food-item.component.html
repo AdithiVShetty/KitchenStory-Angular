@@ -1,0 +1,40 @@
+<app-admin-navbar></app-admin-navbar>
+<div class="deleteFood">
+    
+<br/><br/>
+<div class="container mt-5"> 
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="float-left">
+                <button class="btn btn-sm" (click)="goBackToMenu()"><i class="fas fa-arrow-left"></i> Back to List</button>
+            </div>
+            <br/>
+        </div>
+        <div class="col-md-6">
+            <div class="delete-confirmation-box">
+                <i class="fas fa-trash-alt delete-icon"></i>
+                <p>Are you sure you want to delete {{foodName}}?</p>
+                <button class="btn btn-danger confirm-btn" (click)="deleteFoodItem()">Delete</button>
+                <button class="btn btn-secondary cancel-btn" (click)="cancelDelete()">Cancel</button>
+                <br/>
+                <br/>
+                <div *ngIf="successMessage" class="success-message">
+                    <div class="alert alert-success success-message" role="alert">
+                        <i class="fa fa-check-circle success-icon"></i>
+                        {{ successMessage }}
+                    </div>
+                </div>         
+                <div *ngIf="errorMessage" class="error-message">
+                    <div class="alert alert-danger error-message" role="alert">
+                        <i class="fa fa-exclamation-triangle error-icon"></i>
+                        {{ errorMessage }}
+                    </div>
+                </div> 
+            </div>  
+              
+        </div>
+    </div>
+</div>
+
+
+</div>

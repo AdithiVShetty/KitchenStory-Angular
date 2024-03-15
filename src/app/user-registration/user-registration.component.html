@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7">
+        <div class="login-container well">
+          <h3 class="text-center"><strong>Register</strong></h3>
+          <h5 class="text-center">Create an account</h5>
+          <form (ngSubmit)="register()">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email"><strong>Email Id</strong></label>
+                        <input type="text" id="email" name="email" class="form-control" placeholder="Email Id" [(ngModel)]="newCustomer.EmailId" required autofocus>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="password"><strong>Password</strong></label>
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Password" [(ngModel)]="newCustomer.Password" required autofocus>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="fullName"><strong>Name</strong></label>
+                        <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Name" [(ngModel)]="newCustomer.FullName" required autofocus>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="contact"><strong>Phone Number</strong></label>
+                        <input type="text" id="contact" name="contact" class="form-control" placeholder="Phone No" [(ngModel)]="newCustomer.ContactNo" required autofocus>
+                      </div>
+                </div>
+            </div>
+              <div class="form-group">
+                <label for="address"><strong>Address</strong></label>
+                <textarea id="address" name="address" class="form-control" placeholder="Address" [(ngModel)]="newCustomer.Address" required autofocus></textarea>
+              </div>
+              <div *ngIf="successMessage" class="success-message">
+                <div class="alert alert-success success-message" role="alert">
+                    <i class="fa fa-check-circle success-icon"></i>
+                    {{ successMessage }}
+                </div>
+            </div>   
+            <div *ngIf="errorMessage" class="error-message">
+              <div class="alert alert-danger error-message" role="alert">
+                  <i class="fa fa-exclamation-triangle error-icon"></i>
+                  {{ errorMessage }}
+              </div>
+          </div>
+            <button type="submit" class="btn btn-sm btn-block mt-4">Create an Account</button>
+            <button class="btn btn-sm btn-block mt-2" (click)="goToLogin()">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  

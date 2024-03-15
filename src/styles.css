@@ -1,1 +1,112 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-decoration: none;
+    color: rgb(220, 220, 220);
+    background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),url(Images/food2.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top -50px;
+}
+.masterFoodMenu {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/chocolate-brownie.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top -70px;
+}
+.addingNewFood {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/vegan-buddha-bowl.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.updateFood {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/caesar-salad.jpg);
+    background-size: cover;
+    background-position: center top -100px;
+    height: 100vh;
+}
+
+.deleteFood {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/falafel-wrap.jpg);
+    background-size: cover;
+    background-position: center top -100px;
+    height: 100vh;
+}
+
+.adminResetPassword {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/eggplant-parmesan.jpg);
+    background-size: cover;
+    background-position: center top -100px;
+    height: 100vh;
+
+}
+
+.userDashboard {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/veggie-burger.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top -130px;
+    height: 150vh;
+}
+
+.foodMenu {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/pancake-stack.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top -100px;
+}
+
+.cart {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/chicken-curry.jpg);
+    background-size: cover;
+    background-position: center top -120px;
+    height: 100vh;
+}
+
+.checkout {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/steak-frites.jpg);
+    background-size: cover;
+    background-position: center top -150px;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.orders {
+    background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(Images/beef-tacos.jpg);
+    background-size: cover;
+    background-position: center top -150px;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.orderConfirm {
+    background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(Images/margherita-pizza.jpg);
+    background-size: cover;
+    background-position: center top -100px;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.logout {
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(Images/miso-ramen.jpg);
+    background-size: cover;
+    background-position: center top -60px;
+    height: 100vh;
+}
+.error {
+    background-color: white;
+    height: 100vh;
+}
+
+input{
+    font-weight: 500;
+}

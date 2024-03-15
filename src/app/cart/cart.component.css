@@ -1,0 +1,60 @@
+.btn:hover{
+    background-color: transparent;
+    color: #dc3545;
+    box-shadow: 2px 2px 2px rgb(220, 53, 69, 0.6);
+}
+.remove{
+    color:  rgb(220, 220, 220);
+    font-weight: bold;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.checkout-btn {
+    font-size: 14px;
+    background-color: rgb(65, 117, 158);
+}
+.checkout-btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(65, 117, 158);
+    box-shadow: 2px 2px 4px rgba(65, 117, 158, 0.6);
+}
+.uqh {
+    margin-left: 150px;
+}
+.update-quantity {
+    background-color: transparent;
+    color: rgb(220, 220, 220);
+    font-size: 22px;
+    margin-top: -1px;
+}
+.update-quantity:hover{
+    box-shadow: none;
+    color: rgb(65, 117, 158);
+}
+
+table {
+    font-size: 15px;
+}
+input {
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(220, 220, 220);
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 2px 0 2px 8px;
+}
+  input:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    border-bottom: 4px solid rgb(65, 117, 158);
+  }
+  .error-message {
+    color: red;
+    margin-top: 8px;
+    font-size: 13px;
+  }

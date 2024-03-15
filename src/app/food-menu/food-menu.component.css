@@ -1,0 +1,23 @@
+.btn:hover{
+    background-color: transparent;
+    color: rgb(65, 117, 158);
+    box-shadow: 2px 2px 4px rgba(65, 117, 158, 0.6);
+}
+button{
+    background-color:  #dddddd;
+}
+.cart-btn {
+    font-size: 14px;
+    background-color: rgb(65, 117, 158);
+}
+.cart-btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(65, 117, 158);
+    box-shadow: 2px 2px 4px rgba(65, 117, 158, 0.6);
+}
+table {
+    font-size: 15px;
+}
+.addto {
+    font-size: 12px;
+}

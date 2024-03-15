@@ -1,0 +1,111 @@
+  .order-confirm {
+    margin-top: 10px;
+    padding: 30px 4px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+
+  .confirmation-icon {
+    font-size: 60px;
+    color: rgb(65, 117, 158);
+    margin-bottom: 20px;
+  }
+
+  .confirmation-title {
+    font-size: 24px;
+    color: rgb(65, 117, 158);
+    margin-bottom: 8px;
+  }
+
+  .confirmation-info {
+    font-size: 18px;
+    color: #99a3ab;
+    margin-bottom: 5px;
+    
+  }
+
+  .confirmation-info span {
+    font-weight: bold;
+    color: #495057;
+  }
+
+  .det-on {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+
+  .det {
+    font-size: 15px;
+    color: #6c757d;
+    margin-bottom: 9px;
+  }
+
+  .btn-back-home {
+    background-color: rgb(65, 117, 158);
+    color: #f2eef7;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 14px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  .btn-cancel {
+    background-color:  #dc3545;
+    color: #f2eef7;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 14px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+
+  .btn-cancel:hover {
+      background-color: #b31524;
+  }
+
+  .btn-back-home:hover {
+    background-color: transparent;
+    color: rgb(65, 117, 158);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+
+  .btn-back-home:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+
+
+  .alert-container {
+    margin-top: 20px;
+  }
+  
+  .alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .alert-success {
+      color: green;
+      margin-top: 8px;
+      font-size: 15px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 8px;
+    font-size: 15px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.75rem 1.25rem;
+    color: inherit;
+  }

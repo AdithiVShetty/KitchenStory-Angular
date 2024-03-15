@@ -1,0 +1,46 @@
+<app-admin-navbar></app-admin-navbar>
+<div class="masterFoodMenu">
+    <br/><br/>
+<div class="container mt-5">
+    <div class="row mb-3">
+        <div class="col-md-9">
+            <h2><strong>Master Food Menu</strong></h2>
+        </div>
+        <div class="col-md-3">
+            <!-- <button class="btn btn-sm"><a [routerLink]="['add-user']"> Add New User <i class="fa-solid fa-user-plus"></i></a></button> -->
+            <button class="btn btn-sm float-right mr-2"><a [routerLink]="['add-food']"> Add New Food Item <i class="fa-solid fa-circle-plus"></i></a></button>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>FoodItem</th>
+                        <th>Price (&#8377;)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let food of foodMenu">
+                        <td>{{food.Id}}</td>
+                        <td>{{food.Name}}</td>
+                        <td>{{food.Price | number:'1.2-2'}}</td>
+                        <td>
+                           <div class="float-right">
+                            <button class="btn btn-sm" (click)="goToUpdatePage(food.Id)">
+                                Edit <i class="fa-solid fa-pen-to-square"></i>
+                            </button>
+                            <button class="btn btn-sm ml-5" (click)="goToDeletePage(food.Id)">
+                                Remove <i class="fa-solid fa-trash"></i>
+                            </button>
+                           </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>

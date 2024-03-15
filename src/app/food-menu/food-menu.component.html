@@ -1,0 +1,42 @@
+<app-user-navbar></app-user-navbar>
+<div class="foodMenu">
+    <br/><br/>
+<div class="container mt-5">
+    <div class="row mb-3">
+        <div class="col-md-9">
+            <h2><strong>Food Menu</strong></h2>
+        </div>
+        <div class="col-md-3">
+            <button class="btn float-right mr-2 cart-btn" (click)="goToCart()">Go to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>FoodItem</th>
+                        <th>Price (&#8377;)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let food of foodMenu">
+                        <td>{{food.Id}}</td>
+                        <td>{{food.Name}}</td>
+                        <td>{{food.Price | number:'1.2-2'}}</td>
+                        <td>
+                           <div class="float-right">
+                            <button class="btn btn-sm addto" (click)="addToCart(food.Id, 1)">
+                                Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                           </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>

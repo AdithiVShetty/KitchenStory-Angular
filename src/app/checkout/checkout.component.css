@@ -1,0 +1,106 @@
+.table {
+  border: none;
+  font-size: 15px;
+}
+
+.table th,
+.table td {
+  border: none;
+}
+
+.table th {
+  background-color: rgb(65, 117, 158);
+  color: rgb(220, 220, 220);
+}
+
+.btn:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+color: rgb(65, 117, 158);
+  box-shadow: 2px 2px 4px rgba(65, 117, 158, 0.6);
+}
+button{
+  font-size: 14px;
+  background-color: rgb(65, 117, 158);
+}
+
+
+.order-details-container {
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 30px 40px;
+}
+
+.order-details-header {
+  font-size: 24px;
+  color:  rgb(65, 117, 158);
+  margin-bottom: 30px;
+}
+
+.order-details-table {
+  width: 100%;
+}
+
+.order-details-table th {
+  background-color: rgb(65, 117, 158);
+  color: rgb(220, 220, 220);
+  text-align: left;
+}
+
+.order-details-customer {
+  font-size: 18px;
+  color: #6c757d;
+}
+
+.customer-details {
+  margin-top: 30px;
+}
+
+.customer-details dl {
+  margin-bottom: 0;
+}
+
+.customer-details dt {
+  font-weight: bold;
+  color:rgb(65, 117, 158);
+}
+
+.customer-details dd {
+  margin-left: 30px;
+  color: #6c757d;
+}
+
+.total {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.total span {
+  color: #6c757d;
+}
+ 
+.payment {
+  font-size: 16px;
+  margin-bottom: 30px;
+} 
+.mode strong{
+  font-size: 18px;
+  color: #6c757d;
+}
+.radio-btn-group {
+  display: flex;
+}
+
+.form-check {
+  margin-right: 20px;
+}
+.form-check-label {
+  font-size: 15px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 8px;
+  font-size: 13px;
+}

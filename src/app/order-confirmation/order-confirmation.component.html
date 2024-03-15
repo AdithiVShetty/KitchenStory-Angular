@@ -1,0 +1,53 @@
+<app-user-navbar></app-user-navbar>
+<div class="orderConfirm">
+  <br/><br/>
+  <div *ngIf="PlacedOrder">
+    <div class="container confirmation-container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="order-confirm well text-center">
+              <i class="fas fa-check-circle confirmation-icon"></i>
+              <h2 class="confirmation-title">Order Placed Successfully!</h2>
+              <p class="confirmation-info det-on">On</p>
+              <p class="confirmation-info det">
+                <span>{{PlacedOrder.OrderDate | date:'EEEE, MMMM d, y'}}</span>
+              </p>
+              <p class="confirmation-info det">
+                OrderId: <span>aVsfFaKS{{PlacedOrder.Id}}</span>
+              </p>
+              <p class="confirmation-info det">
+                Amount: <span>&#8377; {{PlacedOrder.TotalAmount | number:'1.2-2'}}</span>
+              </p>
+              <p class="confirmation-info det">
+                Payment Mode: <span>{{PlacedOrder.PaymentMode}}</span>
+              </p>
+              <div class="confirmation-info">
+                Thank you for your order.
+              </div>
+              <div class="confirmation-info">
+                Your food will be delivered soon.
+              </div>
+              <div class="row justify-content-center">
+                <button class="btn btn-back-home mr-3" (click)="goToFoodMenu()">Back to Home</button>
+                <button class="btn btn-cancel ml-3" (click)="cancelOrder(orderId)">Cancel Order</button>
+              </div>
+              <div class="alert-container" *ngIf="cancelMessage">
+                <div class="alert alert-success alert-dismissible fade show" role="alert"><i class="fa fa-check-circle success-icon"></i>
+                  {{ cancelMessage }}
+                  <button type="button" class="close" aria-label="Close" (click)="cancelMessage = null">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              </div>
+              <div *ngIf="errorMessage" class="error-message">
+                <div class="alert alert-danger error-message" role="alert">
+                    <i class="fa fa-exclamation-triangle error-icon"></i>
+                    {{ errorMessage }}
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

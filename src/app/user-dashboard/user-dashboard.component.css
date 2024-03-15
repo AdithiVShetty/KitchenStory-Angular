@@ -1,0 +1,70 @@
+.welcome-message {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    color: #f2eef7;
+    padding: 20px 20px 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .welcome-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .btn-explore {
+    background-color: rgb(65, 117, 158);
+    color: #f2eef7;
+    border: none;
+    padding: 7px 20px;
+    font-size: 18px;
+    border-radius: 24px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .btn-explore:hover {
+    background-color: transparent;
+    color: rgb(65, 117, 158);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+  }
+
+  
+.form-control {
+    border-radius: 20px;
+}
+input {
+    font-size: 15px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border: none;
+    border-bottom: 4px solid rgb(65, 117, 158);
+  }
+  .btn:focus {
+    box-shadow: none;
+    border: none;
+  }
+.search-btn {
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: rgb(65, 117, 158);
+    color: #f2eef7;
+}
+.search-btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(65, 117, 158);
+    box-shadow: 2px 2px 4px rgba(65, 117, 158, 0.6);
+}
+table {
+    font-size: 15px;
+}
+table button {
+    background-color: #f2eef7;
+}
+table button a {
+    text-decoration: none;
+    color: #4c3b73;
+}
+table button:hover {
+    background-color: #daceea;
+}
