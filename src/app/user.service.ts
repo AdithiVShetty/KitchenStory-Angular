@@ -113,6 +113,10 @@ export class UserService {
     return this.http.post(`${this.apiUrl}/user/${userId}/placeOrder`, orderData);
   }
 
+  processPayment(paymentData: any): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/payments/process`, paymentData);
+  }
+
   getOrderHistory(userId: number): Observable<PlacedOrderModel[]> {
     return this.http.get<PlacedOrderModel[]>(`${this.apiUrl}/user/${userId}/getorderhistory`);
   }

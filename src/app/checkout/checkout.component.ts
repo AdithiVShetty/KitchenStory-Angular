@@ -44,6 +44,10 @@ export class CheckoutComponent implements OnInit{
     localStorage.setItem('paymentMode', this.paymentMode);
   }
 
+  proceedToPayment(): void {
+    this.router.navigate(['/payment'], { queryParams: { totalAmount: this.orderDetails.TotalAmount, PaymentMode: this.paymentMode } });
+  }
+
   placeOrder(): void {
     console.log("a", this.paymentMode);
     this.userService.placeOrder(this.userId, this.paymentMode)
@@ -64,9 +68,6 @@ export class CheckoutComponent implements OnInit{
 
   }
 
-  // proceedToPayment(): void {
-  //   // Navigate to the next page along with the selected payment mode as a query parameter
-  //   this.router.navigate(['/payment'], { queryParams: { PaymentMode: this.paymentMode } });
-  // }
+
 
 }

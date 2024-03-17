@@ -25,6 +25,7 @@ import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import { LogoutComponent } from './logout/logout.component';
 import { UserLogoutComponent } from './user-logout/user-logout.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { OrderHistoryComponent } from './order-history/order-history.component';
     UserNavbarComponent,
     LogoutComponent,
     UserLogoutComponent,
-    OrderHistoryComponent
+    OrderHistoryComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

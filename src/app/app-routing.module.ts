@@ -18,6 +18,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { OrderConfirmationComponent } from './order-confirmation/order-confirmation.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
+import { PaymentComponent } from './payment/payment.component';
 
 
 const routes: Routes = [
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'food-menu', component: FoodMenuComponent, canActivate: [AuthGuard]},
   { path: 'shopping-cart', component: CartComponent, canActivate: [AuthGuard]},
   { path: 'checkout', component: CheckoutComponent, canActivate: [AuthGuard]},
+  { path: 'payment', component: PaymentComponent, canActivate: [AuthGuard]},
   { path: 'orders', component: OrderHistoryComponent, canActivate: [AuthGuard]},
   { path: 'order-placed/:orderId', component: OrderConfirmationComponent, canActivate: [AuthGuard]},
   { path: 'logout', component: LogoutComponent},

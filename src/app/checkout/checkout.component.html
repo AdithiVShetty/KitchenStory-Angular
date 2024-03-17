@@ -3,8 +3,11 @@
     <br/><br/>
     <div class="container mt-5">
         <div class="col-md-3 float-right">
-            <button class="btn btn-sm float-right mr-2" (click)="placeOrder()">
+            <button class="btn btn-sm float-right mr-2" *ngIf="paymentMode === 'COD'" (click)="placeOrder()">
                 Place Order <i class="fa-solid fa-truck"></i>
+            </button>
+            <button class="btn btn-sm float-right mr-2" *ngIf="['UPI', 'Credit Card', 'Debit Card'].includes(paymentMode)" (click)="proceedToPayment()">
+                Proceed to Pay <i class="fa-solid fa-money-check"></i>
             </button>
         </div>
     </div>
@@ -41,7 +44,7 @@
         <div class="total">
             <strong><span>Total Amount: </span> &#8377; {{orderDetails.TotalAmount | number:'1.2-2'}}</strong>
         </div>
-        <div class="payment">
+        <div class="payment-det">
             <div>
                 <div class="mb-3 mode"><strong>Payment Mode: </strong> {{paymentMode}}</div>
                 <div class="radio-btn-group">

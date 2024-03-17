@@ -14,7 +14,7 @@
                         <div class="order-status"><span>Status: </span> {{order.Status}}</div>
                         <div class="column text-right">
                             <button class="btn btn-sm btn-danger" *ngIf="order.Status === 'In Progress'" (click)="cancelOrder(order.Id)">Cancel</button>
-                            <div class="order-payment mt-1">Payed through {{order.PaymentMode}} </div>
+                            <div class="order-payment mt-1">Payment through {{order.PaymentMode}} </div>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,70 @@
+<app-user-navbar></app-user-navbar>
+<div class="payment">
+    <br/><br/>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div>
+                    <button class="btn btn-sm float-right mr-2" (click)="placeOrder()">
+                        Place Order <i class="fa-solid fa-truck"></i>
+                    </button>
+                    <button class="btn btn-sm float-left mr-2" (click)="checkout()">
+                        <i class="fa-solid fa-backward"></i> Back to Checkout
+                    </button>
+                </div>
+            </div>
+            <br/>
+            <div class="col-md-6">
+                <div class="payment-container well">
+                    <h3 class="text-center"><b>Payment <i class="fa-solid fa-money-check"></i></b></h3>
+                    <h6 class="text-center">Payment Mode: {{ paymentMode }}</h6>
+                    <br/>
+                    <form (ngSubmit)="onSubmit()">
+                        <div *ngIf="paymentMode === 'UPI'">
+                            <div class="form-group">
+                                <label for="upiId">UPI ID:</label>
+                                <input type="text" id="upiId" name="upiId" class="form-control" placeholder="Enter your UPI ID" required>
+                            </div>
+                        </div>
+                        <div *ngIf="paymentMode === 'Credit Card'">
+                            <div class="form-group">
+                                <label for="cardName">Name on Card:</label>
+                                <input type="text" id="cardName" name="cardName" class="form-control" placeholder="Name on card" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cardNumber">Card Number:</label>
+                                <input type="text" id="cardNumber" name="cardNumber" class="form-control" [(ngModel)]="cardNumber" placeholder="Card number" required>
+                            </div>
+                        </div>
+                        <div *ngIf="paymentMode === 'Debit Card'">
+                            <div class="form-group">
+                                <label for="debitCardName">Name on Card:</label>
+                                <input type="text" id="debitCardName" name="debitCardName" class="form-control" placeholder="Name on card" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="debitCardNumber">Card Number:</label>
+                                <input type="text" id="debitCardNumber" name="debitCardNumber" class="form-control" [(ngModel)]="debitCardNumber" placeholder="Card number" required>
+                            </div>
+                        </div>
+                        <div class="from-group">
+                            <p class="amt col-md-12 text-center">Amount: &#8377; {{totalAmount | number:'1.2-2'}}</p>
+                        </div>
+                        <button type="submit" class="btn btn-sm">Pay Now</button>
+                    </form>
+                    <div *ngIf="successMessage" class="success-message">
+                        <div class="alert alert-success success-message" role="alert">
+                            <i class="fa fa-check-circle success-icon"></i>
+                            {{ successMessage }}
+                        </div>
+                    </div>         
+                    <div *ngIf="errorMessage" class="error-message">
+                        <div class="alert alert-danger error-message" role="alert">
+                            <i class="fa fa-exclamation-triangle error-icon"></i>
+                            {{ errorMessage }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

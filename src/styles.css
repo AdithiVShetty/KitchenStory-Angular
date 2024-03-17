@@ -81,6 +81,14 @@ body {
     min-height: 100vh;
 }
 
+.payment {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/spaghetti-carbonara.jpg);
+    background-size: cover;
+    background-position: center top -120px;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
 .orders {
     background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(Images/beef-tacos.jpg);
     background-size: cover;
